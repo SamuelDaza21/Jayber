@@ -9,12 +9,15 @@ package ejercicios.con.jayber;
  * @author dazas
  */
 public class Modelos_de_parcial {
+    //se instancian variables locales
      private final int[]dig_cc;
    private int mod1, mod2, mod3, mod4, mod5;
+   //se instancia el constructor que recibe los datos del main.
     public Modelos_de_parcial(int []dig_cc){
-        this.dig_cc=dig_cc;
+        this.dig_cc=dig_cc;//asigna los datos al array local
        
     }
+    //se crea el metodo que hara todos los calculos esperados 
     public void set_CalcularMod(){
        for(int a=0; a<dig_cc.length;a++){
             switch (dig_cc[a]) {
@@ -39,6 +42,7 @@ public class Modelos_de_parcial {
         }
        
     }
+    //se crean los metodos encargados de retornar al main
     public int get_totMod1(){
         return mod1;
     }
